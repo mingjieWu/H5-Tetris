@@ -9,7 +9,13 @@ div {
     padding: 0;
 }
 
-.game-container {
+body {
+    background: #000;
+    color: #fff;
+}
+
+.game-container,
+.start-container {
     position: relative;
     box-sizing: content-box;
     height: 600px;
@@ -17,6 +23,41 @@ div {
     margin: 0 auto;
     margin-top: 50px;
     border: 1px solid green;
+}
+
+.game-container {
+    display: none;
+}
+
+.start-container {
+    background: url('../images/bg_start.jpg');
+    background-size: cover;
+    width: 390px;
+    padding-top: 200px;
+    box-sizing: border-box;
+}
+
+.start-container p {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.start-container p button {
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    font-family: 微軟正黑;
+    border: 0;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    background: lightblue;
+}
+
+.start-container p button:hover {
+    background: lightcoral;
 }
 
 .game-main-panel {
